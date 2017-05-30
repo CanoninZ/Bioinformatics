@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="bowtie2-sample" version="2.0">
+	<nodes>
+		<node id="0" name="Directory" position="(101.0, 117.0)" project_name="BioDepot" qualified_name="orangebiodepot.OWDirectory.OWDirectory" title="FQ Files" version="" />
+		<node id="1" name="Directory" position="(113.0, 331.0)" project_name="BioDepot" qualified_name="orangebiodepot.OWDirectory.OWDirectory" title="Bt2 Index files" version="" />
+		<node id="2" name="Directory" position="(478.0, 220.0)" project_name="BioDepot" qualified_name="orangebiodepot.OWDirectory.OWDirectory" title="SAM File" version="" />
+		<node id="3" name="Bowtie2" position="(301.0, 219.0)" project_name="BioDepot" qualified_name="orangebiodepot.OWBowtie2.OWSBowtie2" title="Bowtie2" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="FQ Files" sink_node_id="3" source_channel="Dir" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Bt2 Index" sink_node_id="3" source_channel="Dir" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Dir" sink_node_id="2" source_channel="SAM Files" source_node_id="3" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="literal" node_id="0">{'directory_path': '/Users/zoeyz/Documents/bioseminar/data', '__version__': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\xf4\x00\x00\x024\x00\x00\x03\x87\x00\x00\x02v\x00\x00\x01\xf4\x00\x00\x02J\x00\x00\x03\x87\x00\x00\x02v\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0'}</properties>
+		<properties format="literal" node_id="1">{'directory_path': '/Users/zoeyz/Documents/bioseminar/data/index', '__version__': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\xf4\x00\x00\x024\x00\x00\x03\x87\x00\x00\x02v\x00\x00\x01\xf4\x00\x00\x02J\x00\x00\x03\x87\x00\x00\x02v\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0'}</properties>
+		<properties format="literal" node_id="2">{'directory_path': '/Users/zoeyz/Documents/bioseminar/data', '__version__': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\xf4\x00\x00\x024\x00\x00\x03\x87\x00\x00\x02v\x00\x00\x01\xf4\x00\x00\x02J\x00\x00\x03\x87\x00\x00\x02v\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0'}</properties>
+		<properties format="literal" node_id="3">{'__version__': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\x18\x00\x00\x010\x00\x00\x02v\x00\x00\x01\xdc\x00\x00\x01\x18\x00\x00\x01F\x00\x00\x02v\x00\x00\x01\xdc\x00\x00\x00\x00\x00\x00\x00\x00\x05\xa0'}</properties>
+	</node_properties>
+</scheme>
